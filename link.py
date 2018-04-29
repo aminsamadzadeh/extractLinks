@@ -32,10 +32,10 @@ for a in atags:
     if link != '../':
         if ext != None:
             if ext in link:
-                file.write(create_url(url, link))
+                file.write(create_url(url, link).'\n')
                 print(create_url(url, link))
         else:
-            file.write(create_url(url, link))
+            file.write(create_url(url, link).'\n')
             print(create_url(url, link))
 
 file.close()
